@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let n = +prompt("Nhập số bậc của tam giác muốn vẽ");
+        if(n>1){
+        for (let i = 0; i<n; i++){
+            var gach1 = " ";
+            var gach2 = " ";
+            for(let j=0; j<n; j++){
+                if (i > j)
+                    gach1 += " ";
+                else
+                    gach2 += "_"; 
+            }
+            console.log(gach1+gach2);
+        }
+    }
+    else
+        console.log("Hãy nhập n đúng!!!");  
+    </script>
+</body>
+</html>
